@@ -1,0 +1,21 @@
+Creating Tables
+
+Creating the projects table : 
+
+CREATE TABLE projects (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Creating the todos table : 
+
+CREATE TABLE todos (
+    id SERIAL PRIMARY KEY,
+    description TEXT NOT NULL,
+    completed BOOLEAN DEFAULT FALSE,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    project_id INT,
+    FOREIGN KEY (project_id) REFERENCES projects(id) ON DELETE CASCADE
+);
