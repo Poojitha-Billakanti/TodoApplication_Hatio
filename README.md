@@ -34,13 +34,6 @@ This Todo Management Application is designed to help users manage their projects
 
 ## Setup Instructions
 
-### Prerequisites
-
-- **Java 17 or higher**
-- **Node.js** and **npm**
-- **PostgreSQL Database** 
-- **Git** (for version control)
-
 ### Installation
 
 1. **Clone the repository**
